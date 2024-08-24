@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img class="img-logo" src="./assets/logo.svg" alt="logo alura" />
+    </header>
+    <main id="content">
+      <div class="wrapper">
+        <div class="content-input">
+          <textarea
+            id="input-text"
+            class="input-text"
+            placeholder="Ingrese el texto aquí"
+          ></textarea>
+          <p class="warning">
+            <i class="ph-warning-circle-thin"></i>Solo se aceptan letras
+            minúsculas y sin acentos.
+          </p>
+          <div class="buttons">
+            <button id="btnEncrypt" class="button-style button-criptografar">
+              Encriptar
+            </button>
+            <button id="btnDecrypt" class="button-style button-descriptografar">
+              Desencriptar
+            </button>
+          </div>
+        </div>
+        <div class="content-output">
+          <div class="output-noMsg">
+            <div id="contentNoMessage" class="content-noMsg">
+              <h2>Ningun mensaje fue encontrado</h2>
+              <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+          </div>
+
+          <div id="hideOutput" class="hide-output display-option">
+            <div class="output-result">
+              <p id="output-text"></p>
+
+              <button id="btnCopy" class="button-style button-copy">
+                Copiar!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+    <footer>
+      <div class="wrapper">
+        <p>©2024 Desarrollado con ❤️</p>
+      </div>
+    </footer>
+  </body>
+</html>
